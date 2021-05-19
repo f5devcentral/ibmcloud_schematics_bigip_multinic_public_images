@@ -18,26 +18,6 @@ resource "random_password" "password" {
 locals {
   # use the public image if the name is found
   public_image_map = {
-    f5-bigip-14-1-4-0-0-11-all-1slot-1 = {
-      "us-south" = "r006-3b9e5654-e9e3-4396-9f34-7389a1396413"
-      "us-east"  = "r014-56201704-23cd-45a2-b1ac-e9e1f4ab7f41"
-      "eu-gb"    = "r018-b923224f-aa17-4925-9254-9ac7f3f3eb89"
-      "eu-de"    = "r010-5b5be459-1033-4eab-a230-8abef4a5e1e1"
-      "jp-tok"   = "r022-cd95c41d-2568-48dc-8684-aa91b9884e15"
-      "au-syd"   = "r026-c158b9d7-8f92-41b7-beb6-653ee680959e"
-      "jp-osa"   = "r034-6f3e7aed-710c-43a0-b6a9-c27ed8684bc6"
-      "ca-tor"   = "r038-a81ab374-af2a-4c7e-a7fb-d2a2fa556883"
-    }
-    f5-bigip-14-1-4-0-0-11-ltm-1slot-1 = {
-      "us-south" = "r006-92c72a34-ac1f-479c-a3f3-4770e7766515"
-      "us-east"  = "r014-9b2ef019-0fd5-4433-b2ef-fd798535765b"
-      "eu-gb"    = "r018-17a67e41-9c2a-4513-8cba-dedbe433ef17"
-      "eu-de"    = "r010-0570ae54-521d-4135-9b24-5e475890967d"
-      "jp-tok"   = "r022-1e3035fd-fed0-4856-9354-a730c5186254"
-      "au-syd"   = "r026-06383d2a-4e04-422e-923f-3d312d3c3e72"
-      "jp-osa"   = "r034-de793a9d-4011-42e0-a337-faec861f341e"
-      "ca-tor"   = "r038-cb37066d-154e-43e0-839e-01cc4e6ce013"
-    }
     f5-bigip-15-1-2-1-0-0-10-all-1slot-1 = {
       "us-south" = "r006-96eff507-273e-48af-8790-74c74cf4cebd"
       "us-east"  = "r014-fb2140e2-97dd-4cfa-a480-49c36023169a"
