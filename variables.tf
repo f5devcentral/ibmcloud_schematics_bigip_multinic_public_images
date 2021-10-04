@@ -15,11 +15,11 @@ variable "region" {
   description = "The VPC region to instatiate the F5 BIG-IP instance"
 }
 #Present for CLI testing
-#variable "api_key" {
-#  type        = string
-#  default     = ""
-#  description = "IBM Public Cloud API KEY"
-#}
+variable "api_key" {
+  type        = string
+  default     = ""
+  description = "IBM Public Cloud API KEY"
+}
 
 ##################################################################################
 # resource_group - The IBM Cloud resource group to create the F5 BIG-IP instance
@@ -274,3 +274,11 @@ variable "tgrefresh_url" {
   default     = ""
   description = "The URL to POST L3 addresses when tgrefresh is triggered"
 }
+##################################################################################
+# encryption_key_crn - The crn of the encryption key for the boot volume
+##################################################################################
+variable "encryption_key_crn" {
+  type        = string
+  default     = ""
+  description = "The crn of the encryption key"
+} 
